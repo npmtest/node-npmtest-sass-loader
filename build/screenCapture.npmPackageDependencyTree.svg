@@ -1,0 +1,33 @@
+<svg height="478" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="478" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">7 megabytes installed</tspan>
+<tspan x="10" y="42"></tspan>
+<tspan x="10" y="58">node_modules</tspan>
+<tspan x="10" y="74">├── UNMET PEER DEPENDENCY node-sass@^4.0.0</tspan>
+<tspan x="10" y="90">├─┬ sass-loader@6.0.3 </tspan>
+<tspan x="10" y="106">│ ├─┬ async@2.3.0 </tspan>
+<tspan x="10" y="122">│ │ └── lodash@4.17.4 </tspan>
+<tspan x="10" y="138">│ ├─┬ clone-deep@0.2.4 </tspan>
+<tspan x="10" y="154">│ │ ├─┬ for-own@0.1.5 </tspan>
+<tspan x="10" y="170">│ │ │ └── for-in@1.0.2 </tspan>
+<tspan x="10" y="186">│ │ ├─┬ is-plain-object@2.0.1 </tspan>
+<tspan x="10" y="202">│ │ │ └── isobject@1.0.2 </tspan>
+<tspan x="10" y="218">│ │ ├─┬ kind-of@3.1.0 </tspan>
+<tspan x="10" y="234">│ │ │ └── is-buffer@1.1.5 </tspan>
+<tspan x="10" y="250">│ │ ├── lazy-cache@1.0.4 </tspan>
+<tspan x="10" y="266">│ │ └─┬ shallow-clone@0.1.2 </tspan>
+<tspan x="10" y="282">│ │   ├── is-extendable@0.1.1 </tspan>
+<tspan x="10" y="298">│ │   ├── kind-of@2.0.1 </tspan>
+<tspan x="10" y="314">│ │   ├── lazy-cache@0.2.7 </tspan>
+<tspan x="10" y="330">│ │   └─┬ mixin-object@2.0.1 </tspan>
+<tspan x="10" y="346">│ │     └── for-in@0.1.8 </tspan>
+<tspan x="10" y="362">│ ├─┬ loader-utils@1.1.0 </tspan>
+<tspan x="10" y="378">│ │ ├── big.js@3.1.3 </tspan>
+<tspan x="10" y="394">│ │ ├── emojis-list@2.1.0 </tspan>
+<tspan x="10" y="410">│ │ └── json5@0.5.1 </tspan>
+<tspan x="10" y="426">│ ├── lodash.tail@4.1.1 </tspan>
+<tspan x="10" y="442">│ └── pify@2.3.0 </tspan>
+<tspan x="10" y="458">└── UNMET PEER DEPENDENCY webpack@^2.0.0</tspan>
+</text>
+</svg>
