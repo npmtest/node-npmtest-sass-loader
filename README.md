@@ -1,7 +1,7 @@
 # test coverage for  [sass-loader (v6.0.3)](https://github.com/webpack-contrib/sass-loader#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-sass-loader.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-sass-loader) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-sass-loader.svg)](https://travis-ci.org/npmtest/node-npmtest-sass-loader)
 #### Sass loader for webpack
 
-[![NPM](https://nodei.co/npm/sass-loader.png?downloads=true)](https://www.npmjs.com/package/sass-loader)
+[![NPM](https://nodei.co/npm/sass-loader.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/sass-loader)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-sass-loader/tree/alpha)|
 |--:|:--|
@@ -9,11 +9,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-sass-loader/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-sass-loader/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-sass-loader/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-sass-loader/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-sass-loader/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-sass-loader/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-sass-loader/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-sass-loader/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-sass-loader/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-sass-loader%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-sass-loader/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-sass-loader/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-sass-loader/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-sass-loader/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-sass-loader%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-sass-loader/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-sass-loader/build/test-report.html](https://npmtest.github.io/node-npmtest-sass-loader/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-sass-loader/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-sass-loader/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-sass-loader/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-sass-loader/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-sass-loader/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-sass-loader/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-sass-loader/build/screenCapture.npmPackageListing.svg)
 
@@ -82,16 +88,13 @@
     "main": "lib/loader.js",
     "maintainers": [
         {
-            "name": "jtangelder",
-            "email": "j.tangelder@gmail.com"
+            "name": "jtangelder"
         },
         {
-            "name": "akiran",
-            "email": "kiran.coder0@gmail.com"
+            "name": "akiran"
         },
         {
-            "name": "peerigon",
-            "email": "developers@peerigon.com"
+            "name": "peerigon"
         }
     ],
     "name": "sass-loader",
@@ -100,7 +103,6 @@
         "node-sass": "^4.0.0",
         "webpack": "^2.0.0"
     },
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/webpack-contrib/sass-loader.git"
