@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-sass-loader/sass-loader/lib/normalizeOptions.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-sass-loader/node_modules/sass-loader/lib/normalizeOptions.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-sass-loader">npmtest-sass-loader (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-sass-loader/sass-loader/lib/normalizeOptions.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-sass-loader/node_modules/sass-loader/lib/normalizeOptions.js</span></h1>
     <h2>
         
         Statements: <span class="metric">24.14% <small>(7 / 29)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-sass-loader/sass-loader/lib/</a> &#187; normalizeOptions.js</div>
+    <div class="path"><a href="../../../../index.html">All files</a> » <a href="index.html">node-npmtest-sass-loader/node_modules/sass-loader/lib/</a> » normalizeOptions.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -391,71 +389,72 @@ const proxyCustomImporters = require("./proxyCustomImporters");
  * @param {Function} webpackImporter
  * @returns {Object}
  */
-<span class="fstat-no" title="function not covered" >function normalizeOptions(loaderContext, content, webpackImporter) {</span>
-<span class="cstat-no" title="statement not covered" >    const options = cloneDeep(utils.getOptions(loaderContext)) || {};</span>
-<span class="cstat-no" title="statement not covered" >    const resourcePath = loaderContext.resourcePath;</span>
+<span class="fstat-no" title="function not covered">function normalizeOptions(loaderContext, content, webpackImporter) {</span>
+<span class="cstat-no" title="statement not covered">    const options = cloneDeep(utils.getOptions(loaderContext)) || {};</span>
+<span class="cstat-no" title="statement not covered">    const resourcePath = loaderContext.resourcePath;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    options.data = options.data ? (options.data + os.EOL + content) : content;</span>
+<span class="cstat-no" title="statement not covered">    options.data = options.data ? (options.data + os.EOL + content) : content;</span>
 &nbsp;
     // opt.outputStyle
-<span class="cstat-no" title="statement not covered" >    if (!options.outputStyle &amp;&amp; loaderContext.minimize) {</span>
-<span class="cstat-no" title="statement not covered" >        options.outputStyle = "compressed";</span>
+<span class="cstat-no" title="statement not covered">    if (!options.outputStyle &amp;&amp; loaderContext.minimize) {</span>
+<span class="cstat-no" title="statement not covered">        options.outputStyle = "compressed";</span>
     }
 &nbsp;
     // opt.sourceMap
     // Not using the `this.sourceMap` flag because css source maps are different
     // @see https://github.com/webpack/css-loader/pull/40
-<span class="cstat-no" title="statement not covered" >    if (options.sourceMap) {</span>
+<span class="cstat-no" title="statement not covered">    if (options.sourceMap) {</span>
         // Deliberately overriding the sourceMap option here.
         // node-sass won't produce source maps if the data option is used and options.sourceMap is not a string.
         // In case it is a string, options.sourceMap should be a path where the source map is written.
         // But since we're using the data option, the source map will not actually be written, but
         // all paths in sourceMap.sources will be relative to that path.
         // Pretty complicated... :(
-<span class="cstat-no" title="statement not covered" >        options.sourceMap = path.join(process.cwd(), "/sass.map");</span>
-<span class="cstat-no" title="statement not covered" >        if ("sourceMapRoot" in options === false) {</span>
-<span class="cstat-no" title="statement not covered" >            options.sourceMapRoot = process.cwd();</span>
+<span class="cstat-no" title="statement not covered">        options.sourceMap = path.join(process.cwd(), "/sass.map");</span>
+<span class="cstat-no" title="statement not covered">        if ("sourceMapRoot" in options === false) {</span>
+<span class="cstat-no" title="statement not covered">            options.sourceMapRoot = process.cwd();</span>
         }
-<span class="cstat-no" title="statement not covered" >        if ("omitSourceMapUrl" in options === false) {</span>
+<span class="cstat-no" title="statement not covered">        if ("omitSourceMapUrl" in options === false) {</span>
             // The source map url doesn't make sense because we don't know the output path
             // The css-loader will handle that for us
-<span class="cstat-no" title="statement not covered" >            options.omitSourceMapUrl = true;</span>
+<span class="cstat-no" title="statement not covered">            options.omitSourceMapUrl = true;</span>
         }
-<span class="cstat-no" title="statement not covered" >        if ("sourceMapContents" in options === false) {</span>
+<span class="cstat-no" title="statement not covered">        if ("sourceMapContents" in options === false) {</span>
             // If sourceMapContents option is not set, set it to true otherwise maps will be empty/null
             // when exported by webpack-extract-text-plugin.
-<span class="cstat-no" title="statement not covered" >            options.sourceMapContents = true;</span>
+<span class="cstat-no" title="statement not covered">            options.sourceMapContents = true;</span>
         }
     }
 &nbsp;
     // indentedSyntax is a boolean flag.
-<span class="cstat-no" title="statement not covered" >    const ext = path.extname(resourcePath);</span>
+<span class="cstat-no" title="statement not covered">    const ext = path.extname(resourcePath);</span>
 &nbsp;
     // If we are compiling sass and indentedSyntax isn't set, automatically set it.
-<span class="cstat-no" title="statement not covered" >    if (ext &amp;&amp; ext.toLowerCase() === ".sass" &amp;&amp; "indentedSyntax" in options === false) {</span>
-<span class="cstat-no" title="statement not covered" >        options.indentedSyntax = true;</span>
+<span class="cstat-no" title="statement not covered">    if (ext &amp;&amp; ext.toLowerCase() === ".sass" &amp;&amp; "indentedSyntax" in options === false) {</span>
+<span class="cstat-no" title="statement not covered">        options.indentedSyntax = true;</span>
     } else {
-<span class="cstat-no" title="statement not covered" >        options.indentedSyntax = Boolean(options.indentedSyntax);</span>
+<span class="cstat-no" title="statement not covered">        options.indentedSyntax = Boolean(options.indentedSyntax);</span>
     }
 &nbsp;
     // Allow passing custom importers to `node-sass`. Accepts `Function` or an array of `Function`s.
-<span class="cstat-no" title="statement not covered" >    options.importer = options.importer ? proxyCustomImporters(options.importer, resourcePath) : [];</span>
-<span class="cstat-no" title="statement not covered" >    options.importer.push(webpackImporter);</span>
+<span class="cstat-no" title="statement not covered">    options.importer = options.importer ? proxyCustomImporters(options.importer, resourcePath) : [];</span>
+<span class="cstat-no" title="statement not covered">    options.importer.push(webpackImporter);</span>
 &nbsp;
     // `node-sass` uses `includePaths` to resolve `@import` paths. Append the currently processed file.
-<span class="cstat-no" title="statement not covered" >    options.includePaths = options.includePaths || [];</span>
-<span class="cstat-no" title="statement not covered" >    options.includePaths.push(path.dirname(resourcePath));</span>
+<span class="cstat-no" title="statement not covered">    options.includePaths = options.includePaths || [];</span>
+<span class="cstat-no" title="statement not covered">    options.includePaths.push(path.dirname(resourcePath));</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return options;</span>
+<span class="cstat-no" title="statement not covered">    return options;</span>
 }
 &nbsp;
 module.exports = normalizeOptions;
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 14:54:31 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 22:30:49 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
