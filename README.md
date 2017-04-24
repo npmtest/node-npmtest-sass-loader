@@ -1,4 +1,7 @@
-# test coverage for  [sass-loader (v6.0.3)](https://github.com/webpack-contrib/sass-loader#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-sass-loader.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-sass-loader) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-sass-loader.svg)](https://travis-ci.org/npmtest/node-npmtest-sass-loader)
+# npmtest-sass-loader
+
+#### basic test coverage for  [sass-loader (v6.0.3)](https://github.com/webpack-contrib/sass-loader#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-sass-loader.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-sass-loader) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-sass-loader.svg)](https://travis-ci.org/npmtest/node-npmtest-sass-loader)
+
 #### Sass loader for webpack
 
 [![NPM](https://nodei.co/npm/sass-loader.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/sass-loader)
@@ -7,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-sass-loader/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-sass-loader/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-sass-loader/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-sass-loader/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-sass-loader/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-sass-loader/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-sass-loader/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-sass-loader/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-sass-loader/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-sass-loader/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-sass-loader/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-sass-loader/build/coverage.html/index.html)
 
@@ -120,7 +123,8 @@
         "test-source-map": "webpack-dev-server --config test/sourceMap/webpack.config.js --content-base ./test/sourceMap --inline",
         "test-watch": "webpack --config test/watch/webpack.config.js"
     },
-    "version": "6.0.3"
+    "version": "6.0.3",
+    "bin": {}
 }
 ```
 
